@@ -71,14 +71,12 @@ Module ProductLibrary
         Try
             Dim MyAdapter As New SqlDataAdapter
             Dim MySqlCommand As New SqlCommand
-            'Continue with registration
             If ConSQL.State = ConnectionState.Closed Then ConSQL.Open()
 
             MySqlCommand.Connection = ConSQL
             MySqlCommand.CommandText = "delete from Items where i_id = '" & pid & "'"
             MySqlCommand.CommandType = CommandType.Text
             MySqlCommand.ExecuteNonQuery()
-
         Catch ex As Exception
             MsgBox(Err.Description)
             Return False
