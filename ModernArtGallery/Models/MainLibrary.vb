@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Module MainLibrary
     'Testing the GitHub functionality.
+    'Check how sync works for GitHub
     Dim dbConnectionStr As String = "Data Source = dorapc;Initial Catalog =MAC;User Id=sa;Password=prnewk3;"
     Friend ConSQL As SqlConnection
     Friend CurrentUser As MyUser
