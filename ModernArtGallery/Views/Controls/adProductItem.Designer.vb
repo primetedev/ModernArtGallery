@@ -23,7 +23,7 @@ Partial Class adProductItem
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.chk = New System.Windows.Forms.CheckBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblDesc = New System.Windows.Forms.Label()
         Me.lblPrice = New System.Windows.Forms.Label()
@@ -41,14 +41,14 @@ Partial Class adProductItem
         Me.Panel1.Size = New System.Drawing.Size(1020, 1)
         Me.Panel1.TabIndex = 0
         '
-        'CheckBox1
+        'chk
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(11, 36)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 1
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.chk.AutoSize = True
+        Me.chk.Location = New System.Drawing.Point(11, 36)
+        Me.chk.Name = "chk"
+        Me.chk.Size = New System.Drawing.Size(15, 14)
+        Me.chk.TabIndex = 1
+        Me.chk.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -112,7 +112,7 @@ Partial Class adProductItem
         Me.Controls.Add(Me.lblPrice)
         Me.Controls.Add(Me.lblDesc)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.chk)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "adProductItem"
         Me.Size = New System.Drawing.Size(1020, 85)
@@ -122,7 +122,7 @@ Partial Class adProductItem
 
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chk As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents lblDesc As System.Windows.Forms.Label
     Friend WithEvents lblPrice As System.Windows.Forms.Label

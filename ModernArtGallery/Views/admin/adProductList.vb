@@ -17,6 +17,14 @@
 
     End Sub
 
+    Private Sub btnDelete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDelete.Click
+        For Each pItem As adProductItem In flPanel.Controls
+            If pItem.chk.Checked = True Then
+                If pItem.lblDesc.Tag <> "" Then DeleteProduct(pItem.lblDesc.Tag)
+            End If
+        Next
+    End Sub
+
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         If ModUser Is Nothing Then
             Dim t As New login
@@ -27,4 +35,6 @@
             Timer1.Enabled = False
         End If
     End Sub
+
+   
 End Class
